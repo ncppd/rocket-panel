@@ -17,7 +17,9 @@ PTWALK=$ROCKET_DIR/PTW.scala
 
 MAKEFRAG=$BASE_DIR/../common/Makefrag.zcu
 BOOT_BIN=$BASE_DIR/petalinux_proj/images/linux/BOOT.BIN
-GEN_BITSTREAM=$BASE_DIR/../../generated-bitstream
+GEN_BITSTREAM=$BASE_DIR/generated-bitstream
+
+mkdir -p $GEN_BITSTREAM
 
 for i in ${!L1_SETS[@]} 
 do
